@@ -10,10 +10,10 @@ class HiddenMessages extends Component {
                 "Bring a watch and dark clothes to the spot",
                 "Jericho Jericho Go"
             ],
-            showing: 0 
+            showing: -1
         }
     }
-    
+
     componentWillMount() {
         this.interval = setInterval(() => {
             let { showing, messages } = this.state

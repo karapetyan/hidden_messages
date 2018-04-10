@@ -4,11 +4,13 @@ class HiddenMessage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            show: (props.show) ? props.show : false
+            show: props.show
         }
     }
 
-    
+    componentWillReceiveProps(nextProps) {
+        this.setState({show: nextProps.show})
+    }
 
     render() {
         const { children } = this.props
