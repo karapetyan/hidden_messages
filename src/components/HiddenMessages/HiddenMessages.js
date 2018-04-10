@@ -13,6 +13,7 @@ class HiddenMessages extends Component {
             showing: 0 
         }
     }
+    
     componentWillMount() {
         this.interval = setInterval(() => {
             let { showing, messages } = this.state
